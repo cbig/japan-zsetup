@@ -16,7 +16,7 @@ This repository contains code and configuration files that help to understand ho
    Code for creating the Zonation configuration files as well as analyzing the results.
    
 
-The content of the repository links to [a sample data set hosted in Zenodo](TBA). 
+The content of the repository links to [a sample data set hosted in Zenodo](https://doi.org/10.5281/zenodo.1462723). 
 
 It is important to note that even when coupled with the data available in Zenodo, this repository **cannot be used to replicate** the original analyses of [the published study](https://doi.org/10.1111/ddi.12869). The reason is that the data release excludes a significant number of threatened species and completely omits all the species names because of species conservation concerns (see “Data availability” below for more information). Even so, the content of this repository will help you to understand how the Zonation analyses were constructed and how the results of the prioritization analyses were analyzed. In case you are interested in the full original analyses setups, please contact the following persons:
 
@@ -39,7 +39,7 @@ Template files needed for the creation of the Zontion settings files.
 
 #### zsetup_release
 
-The directory contains the Zonation settings files used in the original study. The only difference is, that they are based on [the sample data](TBA) set, not the full data set. All the setting files are automatically created by the `R/01_zproject/01_create_zproject_for_release.R` script and the data files in Zenodo.
+The directory contains the Zonation settings files used in the original study. The only difference is, that they are based on [the sample data](https://doi.org/10.5281/zenodo.1462723) set, not the full data set. All the setting files are automatically created by the `R/01_zproject/01_create_zproject_for_release.R` script and the data files in Zenodo.
 
 
 
