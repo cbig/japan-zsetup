@@ -37,7 +37,7 @@ spp_data <- list("amphibians" = list("code" = "amp", "sheet" = "amphibians"),
                  "plants" = list("code" = "pla", "sheet" = "plants"),
                  "reptiles" = list("code" = "rep", "sheet" = "reptiles"))
 
-aux_data_file <- "../Zendo/input_data/biodiv_features.csv"
+aux_data_file <- "../Zenodo/input_data/biodiv_features.csv"
 # Read in the weights file containting information on the family, AUC,
 # Red-list status and WC for taxa in turn
 #
@@ -50,7 +50,7 @@ w_field <- "weight"
 dat <- as.data.frame(readr::read_csv(aux_data_file))
 
 # Read in aggregate weights
-agg_weights_file <- "../Zendo/input_data/aggregate_weights.csv"
+agg_weights_file <- "../Zenodo/input_data/aggregate_weights.csv"
 agg_weights <- readr::read_csv(agg_weights_file) %>%
   dplyr::filter(agg_category == "Aggregation") %>%
   dplyr::select(-agg_category) %>%
@@ -58,15 +58,15 @@ agg_weights <- readr::read_csv(agg_weights_file) %>%
 
 # Auxiliary data files
 
-ppa_raster_file <- "../Zendo/input_data/prefecture.tif"
+ppa_raster_file <- "../Zenodo/input_data/prefecture.tif"
 ppa_config_file <- "ppa_config.txt"
 
 # FIXME: freswater fish may need a different condition file
-condition_raster_file <- "../Zendo/input_data/hii_rescaled.tif"
+condition_raster_file <- "../Zenodo/input_data/hii_rescaled.tif"
 condition_config_file <- "condition_config.txt"
 
 # Hierarchical masks
-hm3_raster_file <- "../Zendo/input_data/PA_3_levels.tif"
+hm3_raster_file <- "../Zenodo/input_data/PA_3_levels.tif"
 
 # Set up the project
 
