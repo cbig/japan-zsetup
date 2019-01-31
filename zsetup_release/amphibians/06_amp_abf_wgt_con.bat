@@ -1,0 +1,1 @@
+call zig4.exe -r 06_amp_abf_wgt_con/06_amp_abf_wgt_con.dat 06_amp_abf_wgt_con/06_amp_abf_wgt_con.spp 06_amp_abf_wgt_con/06_amp_abf_wgt_con_out/06_amp_abf_wgt_con.txt 0.0 0 1.0 0 --grid-output-formats=compressed-tif --image-output-formats=png
